@@ -2,6 +2,8 @@ return {
 
   {
     "rest-nvim/rest.nvim",
+    keys = { { "<leader>hh", "<Plug>RestNvim<cr>", desc = "Execute HTTP" } },
+
     -- requires = { "nvim-lua/plenary.nvim" },
     config = function()
       require("rest-nvim").setup({
